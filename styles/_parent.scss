@@ -1,0 +1,17 @@
+
+
+$sidebar-font-size: 1.35rem;
+
+$link-hover: rgba(218, 216, 216, .5);
+
+%transition{
+    transition: all .3s ease-out;
+}
+
+
+@mixin display-flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

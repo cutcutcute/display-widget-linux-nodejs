@@ -1,0 +1,48 @@
+.app-sidebar__list-element {
+  transition: all 0.3s ease-out;
+}
+
+.app-sidebar {
+  position: relative;
+  padding: 15px 5px;
+  font-size: 1.35rem;
+  width: 200px;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+.app-sidebar__list {
+  border: 1px solid black;
+  width: 100%;
+}
+.app-sidebar__list-element {
+  line-height: 26px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.app-sidebar__list-element:hover {
+  background-color: rgba(218, 216, 216, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+.app {
+  position: absolute;
+  inset: 0;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+/*# sourceMappingURL=styles.css.map */

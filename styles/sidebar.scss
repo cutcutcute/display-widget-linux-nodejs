@@ -1,0 +1,27 @@
+
+
+.app-sidebar{
+    position: relative;
+    padding: 15px 5px;
+    font-size: $sidebar-font-size;
+    width: 200px;
+    height: 100%;
+    border: 1px solid black;
+    @include display-flex(column, stretch, center);
+
+    &__list{
+        border: 1px solid black;
+        width: 100%;
+
+        &-element{
+            @extend %transition;
+            line-height: 26px;
+            letter-spacing: 2px;
+            cursor: pointer;
+
+            &:hover{
+                background-color:$link-hover;
+            }
+        }
+    }
+} 

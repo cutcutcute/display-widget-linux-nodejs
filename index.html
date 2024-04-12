@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  
+    <link rel="stylesheet" href="./build/styles/styles.css"/>
+    <title>Window Editor</title>
+  </head>
+  <body>
+        <div class="app">
+            <aside class="app-sidebar">
+                <ul class="app-sidebar__list">
+                    <li onclick="openWidget()" class="app-sidebar__list-element" id="resolution-menu"> Resolution</li>
+                    <li class="app-sidebar__list-element">Contrast</li>
+                    <li class="app-sidebar__list-element">Info</li>
+                    <li class="app-sidebar__list-element">Exit</li>
+                </ul>
+            </aside>
+            <main class="app-body" id="main">
+                    qqq
+            </main>
+                
+        </div>
+        <script>
+            let buttonResolutionMenu = document.getElementById("resolution-menu");
+
+            function openWidget(){
+                console.log("click");
+                document.getElementById("main").innerHTML += "<h3>Resolution</h3>";
+            }
+
+                
+            
+        </script>
+  </body>
+</html>
